@@ -1,0 +1,21 @@
+/*
+A Utopian Tree Sapling with a height of 1 inch is plated on day1. The tree grows 2 inches every day.Find the height of the tree in centimeters on nth day. (HINT: 1 inch= 2.54 cms)
+
+input:n day
+output:height in cms
+*/
+
+#include<stdio.h>
+float calcHeight(float x)
+{
+	return ((x*2)-1)*2.54;
+}
+int main()
+{
+	float x,ans;
+	printf("enter the Day:");
+	scanf("%f",&x);
+	ans=calcHeight(x);
+	printf("Height on %fth Day is %f",x,ans);
+	return 0;
+}
