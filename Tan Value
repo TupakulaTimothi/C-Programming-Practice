@@ -1,0 +1,27 @@
+/*sudha is learning about the c library math.h functions.
+she found that there is tan() function in math.h header file.
+she wants to calculate tan45o, but she finds that tan funtion accepts on radians.help
+sudha to convert 45o to radians and calculate the value of tan45o.
+
+input:45
+output:tan value of 45
+*/
+
+#include<stdio.h>
+#include<math.h>
+float calcTan(float x)
+{
+	float radians,ans;
+	radians=(3.14/180)*x;
+	ans=tan(x);
+	return ans;
+}
+int main()
+{
+	float x,ans;
+	printf("enter the Value:");
+	scanf("%f",&x);
+	ans=calcTan(x);
+	printf("Tan Value:%f",ans);
+	return 0;
+}
