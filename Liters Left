@@ -1,0 +1,28 @@
+/*krishna's livelihood depends on selling milk.
+every day he Brings x gallons of milk from his village
+to vijayawada. In Vijayawada he pours 1 lit of milk to each of 36 housesholds. find the
+number of liters of milk left with him? (Hint: 1 gallon = 3.785 liters).
+assume that krishna has adeguate amount of milk.
+
+input:x
+output:liters left
+*/
+
+#include<stdio.h>
+float calcLiters(float x)
+{
+	float nol,litersleft;
+	nol=x*3.785;
+	litersleft=nol-36;
+	return litersleft;
+}
+int main()
+{
+	float x;
+	float litersLeft;
+	printf("enter the gallons krishna brings");
+	scanf("%f",&x);
+	litersLeft=calcLiters(x);
+	printf("the liters left:%f",litersLeft);
+	return 0;
+}
