@@ -1,0 +1,27 @@
+/*
+A painter wants to paint the outer surface of an oil reactangular
+can. the dimensions of the can are 20cm x 15cm x 12cm (l,b,h).
+If 5 paisa is changed to paint per square centimeter,Find the cost of painting in rupees.
+
+
+input:l,b,h
+output:cost
+*/
+
+#include<stdio.h>
+float calcHeight(float l,float b,float h,float cpsm)
+{
+	float surface;
+	surface=2*(l*b+b*h+l*h);
+	float costrupees,costpaise;
+	costpaise=surface*cpsm;
+	costrupees=costpaise/100;
+	return costrupees;
+}
+int main()
+{
+	float l=20,b=15,h=12,CostPerSq=5,CostInRupees,ans;
+	ans=calcHeight(l,b,h,CostPerSq);
+	printf("The Cost is %f",ans);
+	return 0;
+}
