@@ -1,13 +1,7 @@
 /*
-ram and hanuman measure and find that their
-houses are 50 miles apart. if they agree to meet 
-at the midpoint between their two houses,how far will each of 
-them travel in kilometers?(HINT: 1mile = 1.6 kms)
-
-input:50 miles
-output:a value in kms
-
+ram and hanuman measure and find that their houses are 50 miles apart. if they agree to meet at the midpoint between their two houses,how far will each of them travel in kilometers?(HINT: 1mile = 1.6 kms)
 */
+
 #include<stdio.h>
 float calcMidpoint(float dis);
 int main()
