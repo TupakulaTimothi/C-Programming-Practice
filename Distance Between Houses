@@ -1,0 +1,21 @@
+/*
+Google is recruting software engineers to calculate distance between the coordinates of two
+buildings in google maps. some buildings do not have coordinates but have distances to nearest buildings. if the coordinates of two buildings - A is (1,1),B is (2,3) and Building C is 2kms away from Building B.
+find the length of the path from A to C via B.
+
+input:distances
+output:distance from A to C
+*/
+
+#include<stdio.h>
+#include<math.h>
+double calcDist(double x1,double y1,double x2,double y2)
+{
+	return sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+}
+int main()
+{
+	double xA=1.0,yA=1.0,xB=2.0,yB=3.0,distBC=2.0;
+	printf("The distance of AC:%f",calcDist(xA,yA,xB,yB)+distBC);
+	return 0;
+}
