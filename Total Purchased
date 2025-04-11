@@ -1,0 +1,17 @@
+/*
+rameshwar goes to market for buying some fruits and vegetables. he is having a currency of 500rs with him for marteking.
+from a shop he purshases 2.0kg apple priced 50rs per kg, 1.5kg mango priced 35rs per kag, 2.5kg priced 10rs per kg.
+he gives the currency of 500rs to the shopkeeper. Find Out the amount shopkeeper will return to rameshwar and also tell the total item purchased. finally print the bill
+in the following format using format specifiers.
+*/
+
+#include<stdio.h>
+int main()
+{
+	double AppleQunt=2.0,AppleCost=50.0,MangoCost=35.0,MangoQunt=1.5,PotatoCost=10,PotatoQunt=2.5;
+	double Cash=500;
+	double totalPurchased=AppleQunt*AppleCost+MangoCost*MangoQunt+PotatoCost*PotatoQunt;
+	printf(" SNO NameOfTheItem QuantityPrice PerKg TotalAmount");
+	printf("  1     Apple          %lf     	   %lf   %lf     ,Apple")
+	return 0;
+}
