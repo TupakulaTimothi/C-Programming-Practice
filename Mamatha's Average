@@ -1,0 +1,23 @@
+/* 
+mamatha have 5 subjects, she has prepared really well the annual exams and got very good marks
+mamtha is very curious to find her total percentage and display it in .4 precision.
+*/
+
+#include<stdio.h>
+int main()
+{
+	int s1,s2,s3,s4,s5;
+	printf("Enter Subject 1 Marks:");
+	scanf("%d",&s1);
+	printf("Enter Subject 2 Marks:");
+	scanf("%d",&s2);
+	printf("Enter Subject 3 Marks:");
+	scanf("%d",&s3);
+	printf("Enter Subject 4 Marks:");
+	scanf("%d",&s4);
+	printf("Enter Subject 5 Marks:");
+	scanf("%d",&s5);
+	printf("\nPercentage:%.8
+	4f",((s1+s2+s3+s4+s5)/5)*100);
+	return 0;
+}
