@@ -1,0 +1,21 @@
+//Ravi is very good at conditional statements, but he is feared about the ternary operator due to its unique syntax. 
+//Your task is to help Ravi to solve below question using ternary operator. Given an array of 4 elements. 
+//Find odd numbers in the array and calculate their product.
+
+#include<stdio.h>
+int main()
+{
+	int arr[4],i,o,p=1;
+	printf("enter the 4 elements into array:");
+	for(i=0;i<4;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(i=0;i<4;i++)
+	{
+		o=(arr[i]%2!=0)?arr[i]:1;
+		p=p*o;
+	}
+	printf("Product of Odd Numbers In the Array:%d",p);
+	return 0;
+}
