@@ -1,0 +1,15 @@
+/* 
+manish works in a supermarket in billing. rahul bought 10 pens and 5 chocolates. each pen costs 1.5rs and each chocolate
+costs in 10rs and he gave manish 100rs to pay bill. find the total bill amomunt and remaining change.
+*/
+
+#include<stdio.h>
+int main()
+{
+	int np=10,nc=5;
+	float pc=1.5,cc=10.0;
+	float total=np*pc+nc*cc;
+	printf("Total Bill %f",total);
+	printf("the remaining change:%f",100-total);
+	return 0;
+}
