@@ -1,0 +1,15 @@
+/* 
+rahul is very good at dealing with integer and float values but she doesn't know how to handle a character and a string.
+so our task is to help rahul and print a charater and a string.
+*/
+
+#include<stdio.h>
+int main()
+{
+	char c='a',s[]="abcdefghij";//{'a','b','c','d','e','f','g','h','i','l'};
+	printf("Enter the character:");
+	scanf("%c",&c);
+	printf("\nCharacter Value:%c",c);
+	printf("\nString Value:%s",s);
+	return 0;
+}
